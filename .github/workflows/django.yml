@@ -27,6 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Create env file
       run: |
+        touch .env
         echo "${{ secrets.SECRET_KEY }}" > .env
     - name: Run migrations
       run: |
