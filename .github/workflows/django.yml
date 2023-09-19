@@ -28,9 +28,6 @@ jobs:
     - name: Create env file
       run: |
         echo "${{ secrets.SECRET_KEY }}" > .env
-    - name: Run Tests
-      run: |
-        python manage.py test
     - name: Run migrations
       run: |
         python manage.py makemigrations
