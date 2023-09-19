@@ -5,3 +5,5 @@
 ```
 $docker-compose up -d
 ```
+For some reason the nginx server showing 502 bad gateway error.
+But the dockerized django app is working properly on port 8000
